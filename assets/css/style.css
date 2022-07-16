@@ -554,6 +554,10 @@ padding: 7px 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.purple .touch{
+    width: 750px;
 }
 .purple .touch label{
     margin:20px 0;
@@ -590,7 +594,7 @@ padding: 7px 15px;
     font-size: 20px;
 }
 .purple .reach{
-
+    width: 340px;
 }
 .purple .social{
     text-align: center;
@@ -646,14 +650,6 @@ footer .left a:hover{
     #subscribe ul li:nth-child(2),#subscribe ul li:nth-child(3){
         width: 50%;
     }
-    .purple{
-    }
-    .purple .reach{
-       width: 100%;
-    }
-    .purple .touch{
-     width: 100%;
-    }
 }
 
 @media screen and (max-width:1140px) {
@@ -677,8 +673,8 @@ footer .left a:hover{
         margin-top: 100px;
         padding: 40px 0;
     }
-    .purple .touch{
-    
+    .purple .border{
+        padding-bottom:1000px;
     }
 
 }
@@ -699,11 +695,11 @@ footer .left a:hover{
     .start .content .flex .left{
         width: 100%;
         margin-top:0;
-
     }
+   
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:750px) {
     #header {
         text-align: center;
     }
@@ -725,6 +721,32 @@ footer .left a:hover{
     .subscribe .ok ul li.right p{
         margin-bottom: 0;
     }
+    .purple .touch .email input{
+        width: 350px;
+        height:40px;
+    }
+    .purple .touch .comment input{
+        width: 350px;
+        height: 120px;
+    }
+    .purple .touch .submit input{
+        width: 70px;
+        height: 50px;
+        
+    }
+    .purple .touch .email input{
+        width: 550px;
+        height:40px;
+    }
+    .purple .touch .comment input{
+        width: 550px;
+        height: 120px;
+    }
+    .purple .touch .submit input{
+        width: 70px;
+        height: 50px;
+        
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -737,5 +759,17 @@ footer .left a:hover{
     }
     .subscribe .ok ul li.right p{
         margin-bottom: 0;
+    }
+    .purple .touch .email input{
+        width: 350px;
+        height:40px;
+    }
+    .purple .touch .comment input{
+        width: 350px;
+        height: 120px;
+    }
+    .purple .touch .submit input{
+        width: 50px;
+        height: 30px;  
     }
 }
