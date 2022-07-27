@@ -4,6 +4,15 @@
 @import "brands.css";
 @import "fontawesome.css";
 @import "regular.css";
+@keyframes menu {
+    0%{
+        width: 0;
+        height:0;
+    }
+    100%{
+        width: 300px;
+    }
+}
 
 body {
     font-family: Vazirmatn;
@@ -105,12 +114,38 @@ a {
 #header .mobile-main-menu i{
     display: none;
 }
+#header .drawer-menu{
+    width: 300px;
+    height: 60%;
+    background: #fff;
+    position: fixed;
+    top: 80pX;
+    left: 0;
+    text-align:right;
+    opacity:0;
+    transition: 1s;
+}
+#header .drawer-menu.show{
+    opacity: 1;
+    animation: menu 2s;
+
+}
+
+#header .drawer-menu ul li{
+    margin-bottom: 20px;
+}
+#header .drawer-menu ul li a{
+    color: #888;
+   margin-right:20px ;
+}
+#header .drawer-menu ul li a:hover{
+    color: #000;
+}
 #header .main-menu ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     grid-gap: 20px;
-    
 }
 
 #header .main-menu ul li a {

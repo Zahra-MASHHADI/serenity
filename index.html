@@ -15,8 +15,18 @@
             <h1>سایت من.</h1>
           </a>
         </div>
-        <div class="mobile-main-menu">
+        <div onclick="showMenu()" class="mobile-main-menu">
           <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div id="drawer-menu" class="drawer-menu">
+          <ul>
+            <li><a href="#">صفحه اصلی</a></li>
+            <li><a href="#">درباره ی ما</a></li>
+            <li><a href="#">سرویس ها</a></li>
+            <li><a href="#">تیم</a></li>
+            <li><a href="#">بلاگ</a></li>
+            <li><a href="#">تماس با ما</a></li>
+          </ul>
         </div>
         <div class="main-menu">
           <ul>
@@ -670,5 +680,17 @@
     </div>
   </footer>
 </div>
+<script>
+  function showMenu(){
+    var menu = document.getElementById("drawer-menu")
+
+    if (menu.classList.contains("show")){
+      menu.classList.remove("show")
+    } 
+    else{
+      menu.classList.add("show")
+    }
+}
+</script>
   </body>
 </html>
